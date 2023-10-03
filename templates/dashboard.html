@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    
+    <div style="width: 100%;  background-color: rgb(161, 247, 62);  border-radius: 15px; padding-bottom: 0.5rem; text-align: center; margin-bottom: 0.3rem; ">
+        <h2>SALDOS</h2>
+        <h3 style="margin: 0.5rem;" id="saldoUSDT">Saldo USDT: {{ saldoUSDT }}</h3>
+        <h3 style="margin: 0.5rem;" id = "saldoLINK">Saldo LINK: {{ saldoLINK }}</h3>
+        <h3 style="margin: 0.5rem;" id = "saldoSQUAD">Saldo SQUAD: {{ saldoSQUAD }}</h3>
+        <h3 style="margin: 0.5rem;" id = "saldoSOL">Saldo SOL: {{ saldoSOL }}</h3>
+    </div>
+
+    <div style="width: 100%;  background-color: rgb(186, 196, 96); border-radius: 15px; padding-bottom: 0.5rem; text-align: center; margin-bottom: 0.3rem; ">
+        <h2>MENSAJES</h2>
+        <h3 style="margin: 0.5rem;" id="mensajeACTIVIDAD">{{mensajeACTIVIDAD}}</h3>
+   
+
+    </div>
+
+    <div style="width: 100%;  background-color: rgb(62, 247, 145); border-radius: 15px; padding-bottom: 0.5rem; text-align: center; margin-bottom: 0.3rem; ">
+        <h2>ULTIMOS PRECIOS DE COMPRA</h2>
+        <h3 style="margin: 0.5rem;" id="precioLINK">precio link: {{precioLINK}}</h3>
+        <h3 style="margin: 0.5rem;" id="precioSQUAD">precio squad: {{precioSQUAD}}</h3>
+        <h3 style="margin: 0.5rem;" id="precioSOL">precio sol: {{precioSOL}}</h3>
+
+    </div>
+
+    <div style="width: 100%; height: 6rem; background-color: rgb(247, 62, 133); border-radius: 15px; padding-bottom: 0.5rem; text-align: center; margin-bottom: 0.3rem; ">
+        <h2 style="color: white;" id="mensajeERROR">{{mensajeERROR}}</h2>
+
+    </div>
+ 
+    <!-- <p>Precio Sol: {{ precio_sol }}</p>
+    <p>Precio KCS: {{ precio_kcs }}</p>
+    <p>Precio YFDAI: {{ precio_yfdai }}</p> -->
+
+    <!-- Agrega más elementos HTML para mostrar otros datos -->
+    <script>
+        console.log("cosa1")
+        function recargarPaginaCadaDosSegundos() {
+        setInterval(function() {
+            // Recargar la página actual cambiando la URL
+            console.log("Cosa")
+            window.location.href = window.location.href;
+        }, 2000); // 2000 milisegundos (2 segundos)
+        }
+        recargarPaginaCadaDosSegundos()
+    
+        // Actualizar el saldo cada 2 segundos (2000 milisegundos)
+        // setInterval(cargarSaldoUSDT, 2000);
+    
+        // cargarSaldoUSDT();
+    </script>
+    
+</body>
+</html>
